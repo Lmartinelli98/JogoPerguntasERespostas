@@ -16,5 +16,16 @@ namespace JogoDesktop
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          if(rdbResposta2.Checked == true)
+            {
+                MessageBox.Show("ACERTOU MIZERAVIII!!");
+            }else
+            {
+                MessageBox.Show("ERROOOOUUUUU!!");
+            }
+        }
     }
 }
