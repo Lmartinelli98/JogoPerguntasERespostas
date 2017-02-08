@@ -44,6 +44,7 @@
             this.lblPergunta.Size = new System.Drawing.Size(78, 13);
             this.lblPergunta.TabIndex = 0;
             this.lblPergunta.Text = "Quanto é 4+3?";
+            this.lblPergunta.Click += new System.EventHandler(this.lblPergunta_Click);
             // 
             // rdbResposta1
             // 
@@ -111,6 +112,7 @@
             this.Controls.Add(this.rdbResposta1);
             this.Controls.Add(this.lblPergunta);
             this.Name = "Pergunta1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pergunta1";
             this.ResumeLayout(false);
             this.PerformLayout();
