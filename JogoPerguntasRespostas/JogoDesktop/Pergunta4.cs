@@ -7,23 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-c
+using System.Data.SqlClient;
 
 namespace JogoDesktop
 {
-    public partial class Pergunta3 : Form
+    public partial class Pergunta4 : Form
     {
         public int id_jogador_banco;
-        public Pergunta3(int id_jogador)
+        public Pergunta4(int id_jogador)
         {
             InitializeComponent();
             id_jogador_banco = id_jogador;
-
         }
 
         private void btnProxima_Click(object sender, EventArgs e)
         {
-            if (rdbResposta1.Checked == true)
+            if (rdbResposta3.Checked == true)
             {
                 MessageBox.Show("ACERTOU MIZERAVIII!!");
 
@@ -33,14 +32,14 @@ namespace JogoDesktop
                     using (SqlCommand comando = new SqlCommand("insert into tb_Perguntas(pergunta,resposta_correta,id_jogador) values(@PERGUNTA,@RESPOSTA_CORRETA,@TB_JOGADOR)", conexao))
                     {
                         comando.Parameters.AddWithValue("PERGUNTA", lblPergunta.Text);
-                        comando.Parameters.AddWithValue("RESPOSTA_CORRETA", rdbResposta1.Text);
+                        comando.Parameters.AddWithValue("RESPOSTA_CORRETA", rdbResposta3.Text);
                         comando.Parameters.AddWithValue("TB_JOGADOR", id_jogador_banco);
                         conexao.Open();
-                       // comando.ExecuteNonQuery();
+                        // comando.ExecuteNonQuery();
 
-                        if (comando.ExecuteNonQuery() == 1) 
+                        if (comando.ExecuteNonQuery() == 1)
                         {
-                            
+                            MessageBox.Show("Parabens vc é inteligente");
                             this.Close();
                         }
 
@@ -54,32 +53,12 @@ namespace JogoDesktop
             }
         }
 
-        private void rdbResposta4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rdbResposta3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rdbResposta2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rdbResposta1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblPergunta_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Pergunta3_Load(object sender, EventArgs e)
+        private void rdbResposta1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

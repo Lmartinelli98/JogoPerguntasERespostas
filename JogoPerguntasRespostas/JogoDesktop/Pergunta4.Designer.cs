@@ -1,6 +1,6 @@
 ﻿namespace JogoDesktop
 {
-    partial class Pergunta3
+    partial class Pergunta4
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             this.btnProxima.Location = new System.Drawing.Point(158, 267);
             this.btnProxima.Name = "btnProxima";
             this.btnProxima.Size = new System.Drawing.Size(143, 45);
-            this.btnProxima.TabIndex = 17;
+            this.btnProxima.TabIndex = 23;
             this.btnProxima.Text = "Próxima pergunta";
             this.btnProxima.UseVisualStyleBackColor = true;
             this.btnProxima.Click += new System.EventHandler(this.btnProxima_Click);
@@ -51,46 +51,43 @@
             this.rdbResposta4.AutoSize = true;
             this.rdbResposta4.Location = new System.Drawing.Point(89, 224);
             this.rdbResposta4.Name = "rdbResposta4";
-            this.rdbResposta4.Size = new System.Drawing.Size(45, 17);
-            this.rdbResposta4.TabIndex = 16;
+            this.rdbResposta4.Size = new System.Drawing.Size(48, 17);
+            this.rdbResposta4.TabIndex = 22;
             this.rdbResposta4.TabStop = true;
-            this.rdbResposta4.Text = "Azul";
+            this.rdbResposta4.Text = "Gato";
             this.rdbResposta4.UseVisualStyleBackColor = true;
-            this.rdbResposta4.CheckedChanged += new System.EventHandler(this.rdbResposta4_CheckedChanged);
             // 
             // rdbResposta3
             // 
             this.rdbResposta3.AutoSize = true;
             this.rdbResposta3.Location = new System.Drawing.Point(89, 188);
             this.rdbResposta3.Name = "rdbResposta3";
-            this.rdbResposta3.Size = new System.Drawing.Size(59, 17);
-            this.rdbResposta3.TabIndex = 15;
+            this.rdbResposta3.Size = new System.Drawing.Size(61, 17);
+            this.rdbResposta3.TabIndex = 21;
             this.rdbResposta3.TabStop = true;
-            this.rdbResposta3.Text = "Branco";
+            this.rdbResposta3.Text = "Galinha";
             this.rdbResposta3.UseVisualStyleBackColor = true;
-            this.rdbResposta3.CheckedChanged += new System.EventHandler(this.rdbResposta3_CheckedChanged);
             // 
             // rdbResposta2
             // 
             this.rdbResposta2.AutoSize = true;
             this.rdbResposta2.Location = new System.Drawing.Point(89, 154);
             this.rdbResposta2.Name = "rdbResposta2";
-            this.rdbResposta2.Size = new System.Drawing.Size(63, 17);
-            this.rdbResposta2.TabIndex = 14;
+            this.rdbResposta2.Size = new System.Drawing.Size(49, 17);
+            this.rdbResposta2.TabIndex = 20;
             this.rdbResposta2.TabStop = true;
-            this.rdbResposta2.Text = "Amarelo";
+            this.rdbResposta2.Text = "Leão";
             this.rdbResposta2.UseVisualStyleBackColor = true;
-            this.rdbResposta2.CheckedChanged += new System.EventHandler(this.rdbResposta2_CheckedChanged);
             // 
             // rdbResposta1
             // 
             this.rdbResposta1.AutoSize = true;
             this.rdbResposta1.Location = new System.Drawing.Point(89, 120);
             this.rdbResposta1.Name = "rdbResposta1";
-            this.rdbResposta1.Size = new System.Drawing.Size(50, 17);
-            this.rdbResposta1.TabIndex = 13;
+            this.rdbResposta1.Size = new System.Drawing.Size(68, 17);
+            this.rdbResposta1.TabIndex = 19;
             this.rdbResposta1.TabStop = true;
-            this.rdbResposta1.Text = "Preto";
+            this.rdbResposta1.Text = "Cachorro";
             this.rdbResposta1.UseVisualStyleBackColor = true;
             this.rdbResposta1.CheckedChanged += new System.EventHandler(this.rdbResposta1_CheckedChanged);
             // 
@@ -99,12 +96,12 @@
             this.lblPergunta.AutoSize = true;
             this.lblPergunta.Location = new System.Drawing.Point(86, 51);
             this.lblPergunta.Name = "lblPergunta";
-            this.lblPergunta.Size = new System.Drawing.Size(149, 13);
-            this.lblPergunta.TabIndex = 12;
-            this.lblPergunta.Text = "Qual a cor da camiseta preto?";
+            this.lblPergunta.Size = new System.Drawing.Size(144, 13);
+            this.lblPergunta.TabIndex = 18;
+            this.lblPergunta.Text = "Qual desse animais tem asa?";
             this.lblPergunta.Click += new System.EventHandler(this.lblPergunta_Click);
             // 
-            // Pergunta3
+            // Pergunta4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -115,10 +112,9 @@
             this.Controls.Add(this.rdbResposta2);
             this.Controls.Add(this.rdbResposta1);
             this.Controls.Add(this.lblPergunta);
-            this.Name = "Pergunta3";
+            this.Name = "Pergunta4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pergunta3";
-            this.Load += new System.EventHandler(this.Pergunta3_Load);
+            this.Text = "Pergunta4";
             this.ResumeLayout(false);
             this.PerformLayout();
 
